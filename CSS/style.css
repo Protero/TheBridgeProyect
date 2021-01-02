@@ -1,0 +1,156 @@
+
+/*@media only screen and (max-width: 768px) 
+{*/
+    /*Rastro de migas*/
+    nav[aria-label]{
+        display: none;
+    }
+    /*Menú hamburguesa*/
+    ul.menu{
+        display: none;
+    }
+    input[id="menu"]:checked  ~ ul.menu{
+        display:block;
+    }
+    input[id="menu"]{
+        display: none;
+    }
+    ul.menu li {
+        display: block;
+        background: lightgrey;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+    }
+    /*Buscador general*/
+    [role="search"]{
+        display: none;
+    }
+    /*Pie*/
+    [role="contentinfo"]{
+        display: none;
+    }
+    /*General*/
+    .contact label{
+        display: block;
+    }
+
+/*}*/
+@media only screen and (min-width: 768px) 
+{
+    /*Rastro de migas*/
+    nav[aria-label]{
+        display: block;
+    }
+    /*Menú hamburguesa*/
+    input[id="menu"]{
+        display: none;
+    }
+    label[for="menu"]{
+        display: none;
+    }
+    ul.menu{
+        display: block;
+        float: right;
+        margin-right: 1%;  
+    }
+    ul.menu li{
+        display: inline;
+        background:white;
+        border-bottom:1px solid White;
+        
+    }
+    ul.menu a{
+        text-decoration:none;
+    }
+
+    ul.menu a[aria-label]{
+        border-top:1px solid grey; 
+        border-bottom:1px solid grey;
+        
+        
+    }
+    /*Buscador general*/
+    [role="search"]{
+        display: block;
+    }
+    /*Pie*/
+    [role="contentinfo"]{
+        display: block;
+    }
+    /*General*/
+    body{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    header{
+        border:1px solid black;
+    }
+    img{
+        width: 10%;
+        border:1px solid black;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    main{
+        border:1px solid black;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    header div{
+        float: right;
+        margin-right: 1%;
+        margin-top: 1%;
+        border:1px solid black;
+    }
+
+    ul.rastromiga{
+        border:1px solid red;
+        padding-inline-start: 2%;
+    }
+    ul.rastromiga li{
+        display: inline;
+    }
+    ul.rastromiga li+li::before {
+        content: "/\00a0";
+    }
+
+    footer ul{
+        border:1px solid black;
+        padding-left: 30%;
+    
+    }
+    footer li {
+        display: inline;
+    }
+    footer {
+        border:1px solid black;
+    }
+    p{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    h1{
+        border:1px solid black;
+    }
+    .flexContaniner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .contact label{
+        display: block;
+        padding: 1%;
+    }
+    .contact input{
+        margin-left: 1%;
+    }
+    .mesenger{
+        font-size: small;
+    }
+}
