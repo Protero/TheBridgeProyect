@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyect</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Protero | Contacto</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/css/fontawesome.css">
+    <link rel="stylesheet" href="CSS/css/all.css">
 </head>
 <body>
     <header class="clearfix">
         <img src="IMG/logo.jfif" alt="prueba logo">
         <div role="search">
-            <form action="search.php">
+            <form action="#">
                 <input type="text" placeholder="Buscador" title="Buscador">
                 <input type="submit"  value="Buscar">
             </form>
@@ -21,48 +25,59 @@
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="biografia.html">Biografía</a></li>
-                <li><a href="contacto.html" aria-label="Contacto, selecionada">Contacto</a></li>
+                <li><a href="contacto.html" aria-label="Contacto, opción selecionada">Contacto</a></li>
             </ul>   
         </nav>    
     </header>
     <main>
+        <nav aria-label="rastro de migas">
+            <ul class="rastromiga">
+                <li>Está en:<a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>    
+        </nav>
         <h1>Contacto</h1>
         <div class="flexContaniner">
             <div>
                 <h2>Mis perfiles</h2>
                 <ul>
-                    <li>Linkedin</li>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>fsdfasf</li>
+                    <li><a href="#" aria-label="Linkedin"></a><i class="fab fa-linkedin"></i></li>
+                    <li><a href="#" aria-label="Twitter"></a><i class="fab fa-twitter"></i></li>
                 </ul>
-                <h2>Correlo eléctronico</h2>
+                <h2>Correo electrónico</h2>
                 <a href="mailto:protero@outlook.es">protero@outlook.es</a>
             </div>
             <div class="contact">
                 <h2>Contacta conmigo</h2>
                     <p class="mesenger">Los campos marcados con * son obligatorios.</p>
-                    <label for="nombre">Nombre y apellidos:</label>
-                    <input type="text" id="nombre">
-                    <label for="correo">Dirección de correo:</label>
-                    <input type="text" id="correo">
-                    <label for="telefono">Teléfono:</label>
-                    <input type="text" id="telefono">
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" rows="4" cols="40"></textarea>
-                    <input type="submit"  value="Enviar">
+                    <form>
+                        <label for="nombre"><span>*</span> Nombre y apellidos:</label>
+                        <input type="text" id="nombre" required name="name">
+                        <label for="correo"><span>*</span>Dirección de correo:</label>
+                        <input id="correo" required type="email" name="email" >
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="tel">
+                        <label for="mensaje"><span>*</span>Mensaje:</label>
+                        <textarea id="mensaje" rows="4" cols="40" required></textarea>
+                        <br>
+                        <input type="submit"  value="Enviar">
+                     </form>
             </div>
         </div>
     </main>
-    <footer role="contentinfo">
-        <ul>
-            <li><a href="">Biografía</a></li>
-            <li><a href="">Contactos</a></li>
-            <li><a href="">sds</a></li>
-            <li><a href="">sds</a></li>
-            <li><a href="">sds</a></li>
-        </ul>  
+    <footer class="footerFlex" role="contentinfo">
+        <div>
+            <ul>
+                <li><a href="biografia.html">Biografía</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
     </footer>
     
 </body>
