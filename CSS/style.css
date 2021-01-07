@@ -1,5 +1,8 @@
 
    /*Menú hamburguesa*/
+   *{
+       font-family: "Times New Roman", Times, serif;
+   }
    ul.menu{
        display: none;
    }
@@ -20,10 +23,10 @@
         display: block;
     }
     h1{
-        font-family: 'Big Shoulders Stencil Text', cursive;
+        font-family: 'Big Shoulders Stencil Text', cursive, arial;
     }
     h2{
-        font-family: 'Big Shoulders Stencil Text', cursive;
+        font-family: 'Big Shoulders Stencil Text', cursive, arial;
     }
     span{
         font-weight: bold;
